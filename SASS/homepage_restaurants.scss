@@ -2,13 +2,19 @@
 @import 'mixin.scss';
 
 .restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
+    gap: 18px;
+    background-color: $main-bg-color;
     a{
-        width: 100%
+        width: 100%;
     }
     &__card{
         @include card;
         height: 250px;
+        background-color: white;
         box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
 
         img{
@@ -17,11 +23,16 @@
             height: 70%;
             width: 100%;
         }
+        i:hover{
+            color: red;
+        }
 
         &__content{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
+            padding: 15px;
         }
     }
 }
