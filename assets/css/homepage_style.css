@@ -35,6 +35,18 @@ a {
   text-align: center;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #353535;
+  color: white;
+}
+footer img {
+  width: 50%;
+}
+
 .onboarding {
   display: flex;
   flex-direction: column;
