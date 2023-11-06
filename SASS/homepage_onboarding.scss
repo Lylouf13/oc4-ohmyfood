@@ -1,0 +1,46 @@
+@import 'variables.scss';
+@import 'mixin.scss';
+
+.onboarding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 15px;
+    text-align: center;
+    background : $main-bg-color;
+}
+button{
+    @include button;
+}
+
+.tutorial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 25px;
+
+    &__card{
+        @include card;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px, 0px;
+        gap: 25px;
+        background-color: $main-bg-color;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+
+        p{
+            transform: translate(-10px, 0px);            
+            border-radius: 100px;
+            width: 20px;
+            text-align: center;
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+}
