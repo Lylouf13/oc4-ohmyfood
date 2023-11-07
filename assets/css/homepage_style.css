@@ -59,16 +59,20 @@ footer img {
 }
 
 button {
+  user-select: none;
   height: 50px;
   width: 200px;
   color: white;
   font-weight: 500;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 40%);
+  filter: brightness(110%);
+  box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 .tutorial {
@@ -125,9 +129,7 @@ button:hover {
   border-radius: 20px 20px 0 0;
   height: 70%;
   width: 100%;
-}
-.restaurants__card i:hover {
-  color: red;
+  transition: all 0.3s;
 }
 .restaurants__card__content {
   display: flex;
@@ -135,4 +137,14 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+}
+.restaurants__card__content i {
+  font-size: 25px;
+}
+.restaurants__card__content .fa-regular:hover {
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=homepage_style.css.map */

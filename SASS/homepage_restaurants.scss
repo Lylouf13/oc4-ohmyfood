@@ -1,5 +1,5 @@
 @import 'variables.scss';
-@import 'mixin.scss';
+@import 'mixins.scss';
 
 .restaurants{
     display: flex;
@@ -22,9 +22,7 @@
             border-radius: 20px 20px 0 0;
             height: 70%;
             width: 100%;
-        }
-        i:hover{
-            color: red;
+            transition: all 0.3s;
         }
 
         &__content{
@@ -33,6 +31,18 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px;
+
+            i{
+                font-size: 25px;
+            }
+
+            .fa-regular:hover{
+                font-weight: 800;
+                background: -webkit-linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }           
         }
     }
 }
