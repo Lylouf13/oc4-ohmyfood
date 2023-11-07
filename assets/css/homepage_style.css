@@ -39,12 +39,25 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   padding: 20px;
+  gap: 15px;
   background-color: #353535;
   color: white;
 }
-footer img {
-  width: 50%;
+footer h3 {
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+footer .fa-solid {
+  width: 20px;
+  font-size: 16px;
+  margin-right: 10px;
 }
 
 .onboarding {
@@ -81,6 +94,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
+  margin-top: 30px;
   gap: 25px;
 }
 .tutorial__card {
@@ -91,25 +105,37 @@ button:hover {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px, 0px;
+  margin-left: 5px;
   gap: 25px;
   background-color: #F3F3F3;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
 }
-.tutorial__card p {
+.tutorial__card span {
   transform: translate(-10px, 0px);
-  border-radius: 100px;
-  width: 20px;
-  text-align: center;
-  color: white;
   background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+}
+.tutorial__card p {
+  position: absolute;
+  transform: translate(8px, 4px);
+  font-size: 14px;
+  color: white;
+}
+.tutorial__card__icon {
+  color: grey;
+}
+.tutorial__card__icon--color {
+  color: #9356DC;
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 60px 20px;
+  margin-top: 40px;
   gap: 18px;
   background-color: #F3F3F3;
 }
@@ -143,7 +169,7 @@ button:hover {
 }
 .restaurants__card__content .fa-regular:hover {
   font-weight: 800;
-  background: -webkit-linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

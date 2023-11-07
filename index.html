@@ -9,15 +9,13 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="assets/css/homepage_style.css">
-        <!-- Shrikhand // Roboto -->
     </head>
 
     <body>
         <header class="header">
             <div class="header__logoContainer">
-                <img class="header__logo" src="assets/images/logo/ohmyfood.png">
+                <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
             </div>
-            <!-- INTEGRER FONT AWESOME POUR LES ICONES -->
             <p class="header__location"><i class="fa-solid fa-location-dot"></i> Paris, Belleville</p>
             <span class="heart"></span>
         </header>
@@ -29,9 +27,18 @@
             </section>
             <section class="tutorial">
                 <h2>Fonctionnement</h2>
-                <div class="tutorial__card"><p>1</p><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</div>
-                <div class="tutorial__card"><p>2</p><i class="fa-solid fa-list"></i>Composez votre menu</div>
-                <div class="tutorial__card"><p>3</p><i class="fa-solid fa-store"></i>Dégustez au restaurant</div>
+                <div class="tutorial__card">
+                    <span><p>1</p></span>
+                    <i class="tutorial__card__icon fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant
+                </div>
+                <div class="tutorial__card">
+                    <span><p>2</p></span>
+                    <i class="tutorial__card__icon fa-solid fa-list"></i>Composez votre menu
+                </div>
+                <div class="tutorial__card">
+                    <span><p>3</p></span>
+                    <i class="tutorial__card__icon fa-solid fa-store tutorial__card__icon--color"></i>Dégustez au restaurant
+                </div>
             </section>
             <section class="restaurants">
                 <h2>Restaurants</h2>
@@ -79,18 +86,21 @@
                                 <h3>Le délice des sens</h3>
                                 <p>Folie Méricourt</p>
                             </div>
-                            <p class="restaurants__heart"></p>
                             <i class="fa-regular fa-heart"></i>
                         </div>
                     </article>
                 </a>
             </section>
             <footer>
-                <img src="assets/images/logo/ohmyfoodwhite.svg" alt="Le logo Ohmyfood">
-                <p><i></i>Proposer un restaurant</p>
-                <p><i></i>Devenir partenaire</p>
-                <p>Mentions légales</p>
-                <p>Contact</p>
+                <!-- <img src="assets/images/logo/ohmyfoodwhite.svg" alt="Le logo Ohmyfood"> -->
+                <h3>ohmyfood</h3>
+
+                <div>
+                    <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+                    <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+                    <p>Mentions légales</p>
+                    <p>Contact</p>
+                </div>
             </footer>
         </main>
     </body>

@@ -5,7 +5,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
+    padding: 60px 20px;
+    margin-top: 40px;
     gap: 18px;
     background-color: $main-bg-color;
     a{
@@ -38,7 +39,7 @@
 
             .fa-regular:hover{
                 font-weight: 800;
-                background: -webkit-linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+                background: linear-gradient(0deg, $secondary-color 0%, $primary-color 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
