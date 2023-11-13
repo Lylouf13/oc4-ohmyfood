@@ -1,0 +1,77 @@
+@import '../common/variables.scss';
+@import '../common/mixins.scss';
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 20px;
+    margin-top: 40px;
+    background-color: $main-bg-color;
+
+    &__cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 18px;
+    }
+    &__card{
+        @include card;
+        display:flex;
+        flex-direction: row;
+        height: 251px;
+        background-color: white;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+
+        a{
+            width: 100%;
+        }
+
+        img{
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+            height: 70%;
+            width: 100%;
+            transition: all 0.3s;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap:5px;
+            padding: 13px;
+        }
+
+        &__heart{
+            @include heart;
+            right:55px;
+            top:190px;
+        }
+    }
+    @media screen and (min-width:1024px) {
+
+        align-items: center;
+
+        &__main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap:20px
+        }
+
+        h2{
+            width: 80%;
+        }
+        
+        &__cardContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 251px 251px;
+            gap: 40px 80px;
+            width: 80%;
+        }
+    }
+}

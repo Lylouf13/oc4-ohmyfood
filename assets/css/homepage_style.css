@@ -1,11 +1,8 @@
-/* reminder on how to use fonts
--- font-family: 'Roboto', sans-serif;
--- font-family: 'Shrikhand', serif;
-*/
 * {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -21,18 +18,24 @@ a {
   justify-content: center;
   width: 100%;
   background: white;
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0px 0px 3px gray);
 }
 .header__logo {
   object-fit: cover;
   padding: 15px 0px;
-  width: 50%;
+  width: 200px;
+  height: 35px;
 }
 .header__location {
   width: 100%;
   padding: 15px 0px;
   font-size: 16px;
   text-align: center;
+}
+.header__image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 footer {
@@ -54,10 +57,19 @@ footer p {
   font-size: 16px;
   margin-bottom: 5px;
 }
+footer .p--heavier {
+  font-weight: 600;
+}
 footer .fa-solid {
   width: 20px;
   font-size: 16px;
   margin-right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .onboarding {
@@ -129,26 +141,55 @@ button:hover {
 .tutorial__card__icon--color {
   color: #9356DC;
 }
+.tutorial__cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .tutorial {
+    justify-content: center;
+    align-items: center;
+  }
+  .tutorial h2 {
+    width: 80%;
+  }
+  .tutorial__cardContainer {
+    flex-direction: row;
+    width: 80%;
+  }
+}
 
 .restaurants {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 60px 20px;
+  gap: 20px;
   margin-top: 40px;
-  gap: 18px;
   background-color: #F3F3F3;
 }
-.restaurants a {
-  width: 100%;
+.restaurants__cardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
 }
 .restaurants__card {
   width: 100%;
   height: 70px;
   border-radius: 20px;
-  height: 250px;
+  display: flex;
+  flex-direction: row;
+  height: 251px;
   background-color: white;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants__card a {
+  width: 100%;
 }
 .restaurants__card img {
   object-fit: cover;
@@ -159,18 +200,64 @@ button:hover {
 }
 .restaurants__card__content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 13px;
 }
-.restaurants__card__content i {
+.restaurants__card__heart {
+  position: relative;
+  height: 50px;
   font-size: 25px;
+  text-align: center;
+  right: 55px;
+  top: 190px;
 }
-.restaurants__card__content .fa-regular:hover {
-  font-weight: 800;
+.restaurants__card__heart__outline {
+  position: absolute;
+  width: 50px;
+  top: 12px;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.restaurants__card__heart__filled {
+  position: absolute;
+  width: 50px;
+  top: 12px;
+  left: 0;
   background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.restaurants__card__heart:hover .restaurants__card__heart__outline {
+  opacity: 0;
+}
+.restaurants__card__heart:hover .restaurants__card__heart__filled {
+  opacity: 1;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    align-items: center;
+  }
+  .restaurants__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .restaurants h2 {
+    width: 80%;
+  }
+  .restaurants__cardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 251px 251px;
+    gap: 40px 80px;
+    width: 80%;
+  }
 }/*# sourceMappingURL=homepage_style.css.map */

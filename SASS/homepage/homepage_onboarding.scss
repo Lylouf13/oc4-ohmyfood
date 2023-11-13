@@ -1,5 +1,5 @@
-@import 'variables.scss';
-@import 'mixins.scss';
+@import '../common/variables.scss';
+@import '../common/mixins.scss';
 
 .onboarding{
     display: flex;
@@ -53,6 +53,28 @@ button{
             &--color{
                 color: $primary-color;
             }
+        }
+    }
+    &__cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        gap: 25px;
+    }
+
+    @media screen and (min-width:1024px) {
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            width: 80%;
+        }
+
+        &__cardContainer{
+            flex-direction: row;
+            width: 80%;
         }
     }
 }

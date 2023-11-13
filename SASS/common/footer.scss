@@ -16,9 +16,18 @@ footer{
         font-size:16px;
         margin-bottom: 5px;
     }
+    .p--heavier{
+        font-weight: 600;
+    }
     .fa-solid{
         width:20px;
         font-size:16px;
         margin-right:10px;
+    }
+
+    @media screen and (min-width:1024px){
+        flex-direction: row;
+        justify-content: flex-end;
+        
     }
 }
