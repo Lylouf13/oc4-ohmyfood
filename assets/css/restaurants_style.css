@@ -23,7 +23,8 @@ a {
 .header__logo {
   object-fit: cover;
   padding: 15px 0px;
-  width: 50%;
+  width: 200px;
+  height: 35px;
 }
 .header__location {
   width: 100%;
@@ -37,27 +38,61 @@ a {
   object-fit: cover;
 }
 
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
-  gap: 15px;
+  gap: 5px;
   background-color: #353535;
   color: white;
 }
-footer h3 {
+.footer h3 {
   font-family: "Shrikhand", serif;
   font-size: 18px;
   font-weight: 100;
 }
-footer p {
+.footer__textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer p {
   font-size: 16px;
   margin-bottom: 5px;
 }
-footer .fa-solid {
+.footer .p--heavier {
+  font-weight: 500;
+}
+.footer .fa-solid {
   width: 20px;
   font-size: 16px;
   margin-right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 60px;
+    gap: 40px;
+  }
+  .footer h3 {
+    order: 1;
+    padding: 0px 20px 5px 20px;
+  }
+  .footer__textContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.menu {
+  display: flex;
+  position: relative;
+  top: -60px;
+  border-radius: 30px 30px 0 0;
+  background-color: #F3F3F3;
 }/*# sourceMappingURL=restaurants_style.css.map */
