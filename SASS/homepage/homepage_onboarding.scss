@@ -26,6 +26,7 @@ button{
 
     &__card{
         @include card;
+        @include animated-slideFromLeft;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
