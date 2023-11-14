@@ -37,6 +37,12 @@ a {
   height: 250px;
   object-fit: cover;
 }
+.header__return {
+  position: absolute;
+  font-size: 25px;
+  left: 20px;
+  top: 20px;
+}
 
 .footer {
   display: flex;
@@ -98,13 +104,57 @@ a {
   border-radius: 30px 30px 0 0;
   background-color: #F3F3F3;
 }
+.menu__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__name h2 {
+  margin-top: 20px;
+  padding-left: 15px;
+  font-family: "Shrikhand", serif;
+}
+.menu__name__heart {
+  position: relative;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  right: 55px;
+  top: 10px;
+}
+.menu__name__heart__outline {
+  position: absolute;
+  width: 50px;
+  top: 12px;
+  left: 0;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.menu__name__heart__filled {
+  position: absolute;
+  width: 50px;
+  top: 12px;
+  left: 0;
+  background: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.menu__name__heart:hover .menu__name__heart__outline {
+  opacity: 0;
+}
+.menu__name__heart:hover .menu__name__heart__filled {
+  opacity: 1;
+}
 .menu__section {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .menu__section__title {
-  margin-top: 20px;
+  margin-top: 40px;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -142,21 +192,60 @@ a {
     opacity: 1;
   }
 }
+.menu__section__card__checkbox {
+  appearance: none;
+  width: 95%;
+  height: inherit;
+  position: absolute;
+  cursor: pointer;
+}
+.menu__section__card__content {
+  width: 100%;
+  transition: width 0.5s;
+}
+.menu__section__card__content__price {
+  padding-right: 15px;
+  font-size: 15px;
+}
+.menu__section__card__content__text {
+  padding-left: 15px;
+  white-space: nowrap;
+  overflow: clip;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+.menu__section__card__content__text--bigger {
+  font-size: 18px;
+}
+.menu__section__card__content--bold {
+  font-weight: bold;
+}
+.menu__section__card__content .flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3px;
+}
+.menu__section__card__checkbox:checked ~ .menu__section__card__check {
+  width: 20%;
+}
+.menu__section__card__checkbox:checked ~ .menu__section__card__content {
+  width: 80%;
+}
 .menu__section__card__check {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  width: 0px;
+  width: 0%;
   height: 100%;
   font-size: 20px;
   color: white;
   border-radius: 0px 20px 20px 0px;
   background-color: #99E2D0;
   transition: width 0.5s;
-}
-.menu__section__card:hover .menu__section__card__check {
-  width: 20%;
 }
 .menu button {
   user-select: none;
@@ -170,6 +259,7 @@ a {
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   align-self: center;
+  margin: 40px;
 }
 .menu button:hover {
   filter: brightness(110%);

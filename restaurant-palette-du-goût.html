@@ -13,36 +13,55 @@
     <body>
         <header class="header">
             <div class="header__logoContainer">
+                <a href="index.html" class="fa-solid fa-arrow-left header__return"></a>
                 <img class="header__logo" src="assets/images/logo/ohmyfood@2x.svg">
             </div>
             <img class="header__image" src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         </header>
         
         <main class="menu">
+            <div class="menu__name">
+                <h2>La Palette Du Goût</h2>
+                <div class="menu__name__heart">
+                    <span class="menu__name__heart__outline fa-regular fa-heart"></span>
+                    <span class="menu__name__heart__filled fa-solid fa-heart"></span>
+                </div>            </div>
             <section class="menu__section">
                 <h3 class="menu__section__title">Entrées</h3>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Fricassée d'escargots</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Au piment d'Espelette </p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">25€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </article>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Foie gras de canard mi-cuit</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Et ses copeaux de truffe noire</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">35€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </article>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Œuf au plat</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Assaisonné à la truffe sur lit de caviar</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">20€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
@@ -52,27 +71,39 @@
             <section class="menu__section">
                 <h3 class="menu__section__title">Plats</h3>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Filet de bœuf aux herbes</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Accompagné de sa ribambelle de légumes</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">40€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </article>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Parmentier de queue de bœuf</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">À la truffe noire sur sa purée de panais</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">35€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
                     </div>
                 </article>
                 <article class="menu__section__card">
-                    <div>
-                        <p>text 1</p>
-                        <p>text 2</p>
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Filet de turbot</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Aux agrumes</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">44€</p>
+                        </div>
                     </div>
                     <div class="menu__section__card__check">
                         <i class="fa-solid fa-circle-check"></i>
@@ -82,16 +113,57 @@
             <section class="menu__section">
                 <h3 class="menu__section__title">Desserts</h3>
                 <article class="menu__section__card">
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Paris-Brest</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Revisité</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">18€</p>
+                        </div>
+                    </div>
+                    <div class="menu__section__card__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </article>
                 <article class="menu__section__card">
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Macaron au chocolat d'exception </p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Et glace à la vanille de Madagascar</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">22€</p>
+                        </div>
+                    </div>
+                    <div class="menu__section__card__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </article>
                 <article class="menu__section__card">
+                    <input type="checkbox" class="menu__section__card__checkbox">
+                    <div class="menu__section__card__content">
+                        <p class="menu__section__card__content__text menu__section__card__content__text--bigger menu__section__card__content--bold">Mousse au chocolat</p>
+                        <div class="flexRow">
+                            <p class="menu__section__card__content__text">Au piment d'Espelette et à la truffe noire</p>
+                            <p class="menu__section__card__content__price menu__section__card__content--bold">23€</p>
+                        </div>
+                    </div>
+                    <div class="menu__section__card__check">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
                 </article>
             </section>
-            <button>Explorer nos restaurants</button>
+            <button>Commander</button>
         </main>
-        
-        <footer>
+        <footer class="footer">
+            <h3>ohmyfood</h3>
+            <div class="footer__textContainer">
+                <p class="p--heavier"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p>
+                <p class="p--heavier"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p>
+            </div>
+            <div class="footer__textContainer">
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
         </footer>
     </body>
 </html>
