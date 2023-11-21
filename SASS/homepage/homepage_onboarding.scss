@@ -74,6 +74,19 @@ button{
         width: 100%;
         gap: 25px;
     }
+    @media screen and (min-width:768px) and (max-width:1023.99px){
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            width: 80%;
+        }
+
+        &__cardContainer{
+            align-self: center;
+            width: 80%;
+        }
+    }
 
     @media screen and (min-width:1024px) {
         justify-content: center;
@@ -88,5 +101,6 @@ button{
             width: 80%;
         }
     }
+
 }
 

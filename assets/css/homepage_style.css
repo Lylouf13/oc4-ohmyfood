@@ -267,6 +267,19 @@ button:hover {
   width: 100%;
   gap: 25px;
 }
+@media screen and (min-width: 768px) and (max-width: 1023.99px) {
+  .tutorial {
+    justify-content: center;
+    align-items: center;
+  }
+  .tutorial h2 {
+    width: 80%;
+  }
+  .tutorial__cardContainer {
+    align-self: center;
+    width: 80%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .tutorial {
     justify-content: center;
@@ -376,6 +389,21 @@ button:hover {
   color: #008766;
   background-color: #99E2D0;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) and (max-width: 1023.99px) {
+  .restaurants {
+    justify-content: center;
+    align-items: center;
+  }
+  .restaurants__main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .restaurants__cardContainer {
+    align-self: center;
+    width: 80%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .restaurants {

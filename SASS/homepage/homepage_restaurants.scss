@@ -71,6 +71,21 @@
             }
         }
     }
+    @media screen and (min-width:768px) and (max-width:1023.99px){
+        justify-content: center;
+        align-items: center;
+
+        &__main{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        &__cardContainer{
+            align-self: center;
+            width: 100%;
+        }
+    }
+
     @media screen and (min-width:1024px) {
         align-items: center;
 
