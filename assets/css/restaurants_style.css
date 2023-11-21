@@ -175,12 +175,14 @@ a {
   border-radius: 20px;
   animation-name: animation-slideFromLeft;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   background-color: white;
+  opacity: 0;
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
 }
 @keyframes animation-slideFromLeft {
@@ -194,6 +196,12 @@ a {
   100% {
     opacity: 1;
   }
+}
+.menu__section__card--animationDelayOne {
+  animation-delay: 0.5s;
+}
+.menu__section__card--animationDelayTwo {
+  animation-delay: 1s;
 }
 .menu__section__card__checkbox {
   appearance: none;

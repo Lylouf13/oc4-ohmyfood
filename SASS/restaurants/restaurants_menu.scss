@@ -52,7 +52,17 @@
             align-items: center;
             overflow: hidden;
             background-color: white;
+            opacity: 0;
             box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
+
+            // Delays parts of the menu slide animation
+            &--animationDelayOne{
+                animation-delay: 0.5s;
+            }
+
+            &--animationDelayTwo{
+                animation-delay: 1s;
+            }
 
             &__checkbox{
                 appearance: none;

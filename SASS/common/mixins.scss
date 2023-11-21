@@ -63,6 +63,7 @@
 
     animation-name: animation-slideFromLeft;
     animation-duration: 2s;
+    animation-fill-mode:forwards;
 
     @keyframes animation-slideFromLeft{
         0%{
