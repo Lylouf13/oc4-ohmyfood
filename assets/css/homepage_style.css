@@ -141,6 +141,7 @@ button:hover {
   border-radius: 20px;
   animation-name: animation-slideFromLeft;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

@@ -43,19 +43,23 @@ button{
             height: 24px;
             border-radius: 100px;
         }
+
         p{
             position: absolute;
             transform: translate(8px, 4px);
             font-size: 14px;
             color: white;
         }
+
         &__icon{
             color: grey;
+
             &--color{
                 color: $primary-color;
             }
         }
     }
+    
     &__cardContainer{
         display: flex;
         flex-direction: column;

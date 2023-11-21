@@ -205,7 +205,7 @@ a {
 }
 .menu__section__card__checkbox {
   appearance: none;
-  width: 95%;
+  width: 100%;
   height: inherit;
   padding: inherit;
   position: absolute;
@@ -302,7 +302,7 @@ a {
     width: 100%;
   }
   .menu__section__card__checkbox {
-    width: 68%;
+    width: 100%;
   }
   .menu__section__title {
     align-self: flex-start;
