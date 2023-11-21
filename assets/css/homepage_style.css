@@ -143,6 +143,7 @@ a {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 @keyframes animation-loader-circle {
