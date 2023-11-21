@@ -10,9 +10,6 @@ a {
   color: black;
 }
 
-.header {
-  background: #eaeaea;
-}
 .header__logoContainer {
   display: flex;
   justify-content: center;
@@ -31,11 +28,23 @@ a {
   padding: 15px 0px;
   font-size: 16px;
   text-align: center;
+  background: #eaeaea;
 }
 .header__image {
   width: 100%;
   height: 250px;
   object-fit: cover;
+}
+.header__return {
+  position: absolute;
+  font-size: 25px;
+  left: 20px;
+  top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .header__image {
+    height: 400px;
+  }
 }
 
 .footer {

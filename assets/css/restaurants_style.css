@@ -10,9 +10,6 @@ a {
   color: black;
 }
 
-.header {
-  background: #eaeaea;
-}
 .header__logoContainer {
   display: flex;
   justify-content: center;
@@ -31,6 +28,7 @@ a {
   padding: 15px 0px;
   font-size: 16px;
   text-align: center;
+  background: #eaeaea;
 }
 .header__image {
   width: 100%;
@@ -42,6 +40,11 @@ a {
   font-size: 25px;
   left: 20px;
   top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .header__image {
+    height: 400px;
+  }
 }
 
 .footer {
@@ -100,7 +103,7 @@ a {
   flex-direction: column;
   position: relative;
   padding: 0px 13px;
-  top: -60px;
+  margin-top: -60px;
   border-radius: 30px 30px 0 0;
   background-color: #F3F3F3;
 }
@@ -111,7 +114,7 @@ a {
 }
 .menu__name h2 {
   margin-top: 20px;
-  padding-left: 15px;
+  padding: 0 15px;
   font-family: "Shrikhand", serif;
 }
 .menu__name__heart {
@@ -196,6 +199,7 @@ a {
   appearance: none;
   width: 95%;
   height: inherit;
+  padding: inherit;
   position: absolute;
   cursor: pointer;
 }
@@ -264,4 +268,35 @@ a {
 .menu button:hover {
   filter: brightness(110%);
   box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    margin: 0 100px;
+    margin-top: -50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__name {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .menu__name__heart {
+    top: 10px;
+    right: 0px;
+  }
+  .menu__section {
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  .menu__section__card {
+    width: 100%;
+  }
+  .menu__section__card__checkbox {
+    width: 68%;
+  }
+  .menu__section__title {
+    align-self: flex-start;
+  }
 }/*# sourceMappingURL=restaurants_style.css.map */
