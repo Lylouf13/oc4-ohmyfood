@@ -109,8 +109,8 @@ a {
   width: 100%;
   height: 100%;
   background: white;
+  overflow: hidden;
   position: fixed;
-  bottom: 0;
   animation-name: animation-loader;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -144,6 +144,7 @@ a {
   100% {
     opacity: 0;
     display: none;
+    pointer-events: none;
   }
 }
 @keyframes animation-loader-circle {
