@@ -42,7 +42,7 @@ button{
         background-color: $main-bg-color;
         box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.15);
 
-        span{
+        &__circledNumber{
             transform: translate(-10px, 0px);            
             background-color: $primary-color;
             width: 24px;
