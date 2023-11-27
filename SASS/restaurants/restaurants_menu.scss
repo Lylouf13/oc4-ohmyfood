@@ -60,6 +60,7 @@
                 animation-delay: 0.5s;
             }
 
+            // Delays parts of the menu slide animation
             &--animationDelayTwo{
                 animation-delay: 1s;
             }
@@ -72,6 +73,7 @@
                 position: absolute;
                 cursor: pointer;
             }
+
             &__content{
 
                 width: 100%;
@@ -92,9 +94,11 @@
                         font-size: 18px;
                     }
                 }
+
                 &--bold{
                     font-weight: bold;
                 }
+
                 .flexRow{
                     display: flex;
                     flex-direction: row;
@@ -103,13 +107,7 @@
                     margin-top: 3px;
                 }
             }
-            &__checkbox:checked ~ &__check{
-                width: 20%;
-            }
-            &__checkbox:checked ~ &__content{
-                width: 80%;
-            }
-
+            
             &__check{
                 display: flex;
                 justify-content: center;
@@ -122,6 +120,13 @@
                 border-radius: 0px 20px 20px 0px;
                 background-color: $tertiary-color;
                 transition: width 0.5s;
+            }
+            
+            &__checkbox:checked ~ &__check{
+                width: 20%;
+            }
+            &__checkbox:checked ~ &__content{
+                width: 80%;
             }
         }
     }
